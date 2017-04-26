@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MujNabytek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="hornibox">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="logo"/>
+              <xs:element type="xs:string" name="moto"/>
+              <xs:element name="kosik">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="ikona"/>
+                    <xs:element type="xs:integer" name="pocetKusu"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="levybox">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="menu">
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="kategorie">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Loznice">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="Postele"/>
+                                <xs:element type="xs:string" name="Skrine"/>
+                                <xs:element type="xs:string" name="NocniStolky"/>
+                                <xs:element type="xs:string" name="Komody"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Obyvak">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element name="SedaciSoupravy">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:boolean" name="vybrano"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="Konferencnistolky"/>
+                                <xs:element type="xs:string" name="ObyvaciSteny"/>
+                                <xs:element type="xs:string" name="Policky"/>
+                                <xs:element type="xs:string" name="Knihovna"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:boolean" name="vybrano"/>
+                              <xs:attribute type="xs:boolean" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Kuchyn">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="KuchynskaLinka"/>
+                                <xs:element type="xs:string" name="JidelniStul"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:boolean" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Koupelna">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="SkrinPodUmyvadlo"/>
+                                <xs:element type="xs:string" name="VesakNaRucniky"/>
+                                <xs:element type="xs:string" name="RohovyStojan"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:boolean" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Predsin">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="Botniky"/>
+                                <xs:element type="xs:string" name="Vesaky"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:boolean" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Zahrada">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="VenkovniSoupravy"/>
+                                <xs:element type="xs:string" name="Slunecniky"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:boolean" name="hover"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="background"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="sirka"/>
+            <xs:attribute type="xs:string" name="vyska"/>
+            <xs:attribute type="xs:string" name="ohraniceni"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pravybox">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="aktualniNabytek">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="nazev"/>
+                    <xs:element name="fotka">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="sirka"/>
+                            <xs:attribute type="xs:string" name="vyska"/>
+                            <xs:attribute type="xs:string" name="zobrazeni"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="popis">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="material"/>
+                          <xs:element type="xs:string" name="barva"/>
+                          <xs:element type="xs:string" name="rozmery"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cena">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:boolean" name="sleva"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="skladem"/>
+                    <xs:element type="xs:integer" name="kusu"/>
+                    <xs:element type="xs:string" name="pridat"/>
+                    <xs:element type="xs:string" name="odebrat"/>
+                    <xs:element name="social">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:boolean" name="like"/>
+                          <xs:element type="xs:boolean" name="share"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dalsiNabidka">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="okenko" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="fotka">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="sirka"/>
+                                  <xs:attribute type="xs:string" name="vyska"/>
+                                  <xs:attribute type="xs:string" name="zobrazeni"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="nazev"/>
+                          <xs:element name="cena">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="sleva"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:integer" name="id"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:boolean" name="onresize"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

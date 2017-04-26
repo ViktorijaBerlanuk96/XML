@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="transformace.xsl" type="text/xsl"?>
+<MujNabytek onresize="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="newXmlSchema.xsd">
+    <hornibox>
+        <logo>logo.png</logo>
+        <moto>Nábytek pro vás</moto>
+        <kosik>
+            <ikona>kosik.png</ikona>
+            <pocetKusu>2</pocetKusu>
+        </kosik>
+    </hornibox>
+    
+    <levybox sirka="35px" vyska="60px" ohraniceni="1px solid black">
+        <menu background="light blue">Menu
+            <kategorie>
+                <Loznice hover="true">Ložnice
+                    <Postele>Postele</Postele>
+                    <Skrine>Skříně</Skrine>
+                    <NocniStolky>Noční stolky</NocniStolky>
+                    <Komody>Komody</Komody>
+                </Loznice>
+                <Obyvak vybrano="true" hover="false">Obývák
+                    <SedaciSoupravy vybrano="true">Sedací soupravy</SedaciSoupravy>
+                    <Konferencnistolky>Konferenční stolky</Konferencnistolky>
+                    <ObyvaciSteny>Obývací stěny</ObyvaciSteny>
+                    <Policky>Police</Policky>
+                    <Knihovna>Knihovny</Knihovna>
+                </Obyvak>
+                <Kuchyn hover="false">Kuchyň
+                    <KuchynskaLinka>Kuchyňská linka</KuchynskaLinka>
+                    <JidelniStul>Jídelní stůl</JidelniStul>
+                </Kuchyn>
+                <Koupelna hover="false">Koupelna
+                    <SkrinPodUmyvadlo>Sříně pod umyvadlo</SkrinPodUmyvadlo>
+                    <VesakNaRucniky>Věšáky</VesakNaRucniky>
+                    <RohovyStojan>Rohový stojan na věci</RohovyStojan>  
+                </Koupelna>
+                <Predsin hover="false">Předsíň
+                    <Botniky>Botníky</Botniky>
+                    <Vesaky>Věšáky</Vesaky>
+                </Predsin>
+                <Zahrada hover="false">Zahrada
+                    <VenkovniSoupravy>Venkovní soupravy</VenkovniSoupravy>
+                    <Slunecniky>Slunečníky</Slunecniky>    
+                </Zahrada>
+            </kategorie>
+        </menu> 
+    </levybox> 
+        
+    <pravybox>
+        <aktualniNabytek>
+            <nazev>Sedací souprava Indilia</nazev>
+            <fotka sirka="460px" vyska="393px" zobrazeni="plne">obrazek.png</fotka>
+            <popis>
+                Do všech malých obývacích pokojů, ale i dětských nebo studentských pokojů se bude hodit naše nová a praktická sedací souprava Indilia, která vám nezabere ani centimetr místa navíc.
+                <material>čalounění</material>
+                <barva>černá</barva>
+                <rozmery>
+                    šířka:   215 cm
+                    výška:   85  cm
+                    hloubka: 135 cm
+                </rozmery>
+            </popis>
+            <cena sleva="false">6 990 Kč</cena>
+            <skladem>Dostupné skladem</skladem>
+            <kusu>1</kusu>
+            <pridat>přidat do košíku</pridat>
+            <odebrat>odebrat z košíku</odebrat>
+            <social>
+                <like>true</like>
+                <share>true</share>
+            </social>
+        </aktualniNabytek>
+        
+        <dalsiNabidka>
+            <okenko id="1">
+                <fotka  sirka="195px" vyska="220px" zobrazeni="mini">obrazek.png</fotka>
+                <nazev>Křeslo Boss</nazev>
+                <cena sleva="false">5 890 Kč</cena>
+            </okenko>
+            
+            <okenko id="2">
+                <fotka sirka="195px" vyska="220px" zobrazeni="mini">obrazek.png</fotka>
+                <nazev>Sedací souprava Karol</nazev>
+                <cena sleva="false">9 999 Kč</cena>
+            </okenko>
+            
+            <okenko id="3">
+                <fotka sirka="195px" vyska="220px" zobrazeni="mini">obrazek.png</fotka>
+                <nazev>Destiny model sedací souprava</nazev>
+                <cena sleva="true">4 600 Kč</cena>
+            </okenko>
+            
+            <okenko id="4">
+                <fotka sirka="195px" vyska="220px" zobrazeni="mini">obrazek.png</fotka>
+                <nazev>Křeslo Alžběta</nazev>
+                <cena sleva="false">6 750 Kč</cena>
+            </okenko>
+            
+            <okenko id="5">
+                <fotka sirka="195px" vyska="220px" zobrazeni="mini">obrazek.png</fotka>
+                <nazev>Sedací souprava Amel</nazev>
+                <cena sleva="false">7 200 Kč</cena>
+            </okenko>
+        </dalsiNabidka>
+    </pravybox>
+</MujNabytek>  
+

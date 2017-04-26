@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Berlanuk</title>
+        <meta charset="windows-1250">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Značkovací jazyky</h1>
+            <h2>Dokumentace k projektu</h2>
+            <nav>
+                <ul>
+                    <li><a href="#uvod">Úvod</a></li>
+                    <li><a href="#elementy">Elementy</a></li>
+                    <li><a href="#atributy">Atributy</a></li>
+                    <li><a href="#transformace">Popis transformace</a></li>
+                    <li><a href="#zapati">Zápatí</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <section>
+                    <h3 id="uvod">Úvod</h3>
+                    <p>Semestrální projekt je tvořen jako e-shop s nábytkem</p>
+                </section>
+                <section>
+                    <h3 id="elementy">Elementy</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Název</th>
+                                <th>Datový typ</th>
+                                <th>Význam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>menu</td>
+                                <td>xs:complexType</td>
+                                <td>nabídka</td>
+                            </tr>
+                            <tr>
+                                <td>logo</td>
+                                <td>xs:string</td>
+                                <td>logo firmy</td>
+                            </tr>
+                            <tr>
+                                <td>moto</td>
+                                <td>xs:string</td>
+                                <td>rčení, podle kterého se firma řídí</td>
+                            </tr>
+                            <tr>
+                                <td>kosik</td>
+                                <td>xs:complexType</td>
+                                <td>košík do kterého přidáváte, nebo z něj odebíráte zboží</td>
+                            </tr>
+                            <tr>
+                                <td>pocetKusu</td>
+                                <td>xs:integer</td>
+                                <td>počet položek v košíku</td>
+                            </tr>
+                            <tr>
+                                <td>nazev</td>
+                                <td>xs:string</td>
+                                <td>název zboží</td>
+                            </tr>
+                            <tr>
+                                <td>popis</td>
+                                <td>xs:string</td>
+                                <td>informace o vybraném (právě otevřeném) zboží</td>
+                            </tr>
+                            <tr>
+                                <td>material</td>
+                                <td>xs:string</td>
+                                <td>z jakého materiálu je vybrané zboží</td>
+                            </tr>
+                            <tr>
+                                <td>barva</td>
+                                <td>xs:string</td>
+                                <td>barva vybraného zboží</td>
+                            </tr>
+                            <tr>
+                                <td>rozmery</td>
+                                <td>xs:string</td>
+                                <td>informace o výšce šířce a hloubce zboží</td>
+                            </tr>
+                            <tr>
+                                <td>cena</td>
+                                <td>xs:string</td>
+                                <td>cena zboží</td>
+                            </tr>
+                            <tr>
+                                <td>skladem</td>
+                                <td>xs:string</td>
+                                <td>dostupnost na skladě</td>
+                            </tr>
+                            <tr>
+                                <td>kusu</td>
+                                <td>xs:integer</td>
+                                <td>kolik položek chcete přidat do košíku</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </section>
+                <section>
+                <h3 id="atributy">Atributy</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Název</th>
+                                <th>Datový typ</th>
+                                <th>Význam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>id</td>
+                                <td>xs:integer</td>
+                                <td>identifikační číslo zboží</td>
+                            </tr>
+                            <tr>
+                                <td>zobrazeni</td>
+                                <td>xs:string</td>
+                                <td>zobrazeni fotky v plné/zmenšené velikosti</td>
+                            </tr>
+                            <tr>
+                                <td>vyska</td>
+                                <td>xs:integer</td>
+                                <td>výška elementu</td>
+                            </tr>
+                            <tr>
+                                <td>sirka</td>
+                                <td>xs:integer</td>
+                                <td>šířka elementu</td>
+                            </tr>
+                            <tr>
+                                <td>vybrano</td>
+                                <td>xs:boolean</td>
+                                <td>určení zda-li je prvek rozkliknuty</td>
+                            </tr>
+                            <tr>
+                                <td>hover</td>
+                                <td>xs:string</td>
+                                <td>dotaz na pohyb myši po elementu</td>
+                            </tr>
+                            <tr>
+                                <td>sleva</td>
+                                <td>xs:boolean</td>
+                                <td>dotaz zda-li je poskytnuta sleva</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3 id="transformace">Popis transformace</h3>
+                    <p>Transformace probíhá tak že se vytvoří tabulka do které se načtou informace o zboží. Konkrétně id, fotka, název a cena výrobku. </p>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <h4 id="zapati">Zápatí</h3>
+            <p>autor: Viktorija Berlaňuk</p>
+            <p>Copiright ... &copy;</p>
+        </footer>
+
+    </body>
+</html>
